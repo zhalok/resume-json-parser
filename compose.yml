@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  latex:
+    image: blang/latex:latest
+    container_name: latex_compiler
+    volumes:
+      - ./:/data
+    working_dir: /data
+    entrypoint: ["pdflatex"]
