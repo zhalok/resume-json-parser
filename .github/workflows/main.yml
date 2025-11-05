@@ -4,6 +4,21 @@ on:
   workflow_dispatch:
 
 jobs:
+  setup-compose:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
+      - name: Verify installation
+        run: docker-compose --version
+
   run-commands:
     runs-on: ubuntu-latest
     steps:
