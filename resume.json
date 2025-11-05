@@ -1,28 +1,25 @@
 {
   "basics": {
     "name": "Zhalok Rahman",
-    "email": "rahmanzhalok@gmail.com",
+    "email":"rahmanzhalok@gmail.com",
     "phone": "01716922067",
-    "label": "Software Engineer (Golang) at All Generation Tech",
-    "summary": "Assalamu walaikum, I am a software engineer with more than 4 years of experience. My area of expertise is backend engineering. I have proficiency in Golang, JavaScript, Python.",
+    "label": "Software Engineer 2 at AGT Software Partners",
+    "image": "https://avatars.githubusercontent.com/u/52986893?v=4",
+    "summary": "Assalamu walaikum, I am a software engineer with more than 3 years of experience. My area of expertise is backend engineering. I have proficiency in Golang, JavaScript, Python.",
     "yearsOfExperience": 4001,
     "username": "zhalok",
     "id": "82b77cdc-a60b-42d2-b3bd-3a3cb58f05b2",
     "followers": 55,
     "following": 40,
-    "picture": "https://avatars.githubusercontent.com/u/52986893?v=4",
-    "profiles": [
-      { "network": "LinkedIn", "url": "https://www.linkedin.com/in/zhalok-rahman/" }
-    ]
+    "picture": "https://avatars.githubusercontent.com/u/52986893?v=4"
   },
   "work": [
     {
-      "show": false,
-      "name": "DataTree Technology",
+      "name": "Kinetik Healthcare",
       "position": "Software Engineer 2",
       "url": "https://datatree.com/",
       "startDate": "2025-04-01",
-      "summary": "Working as an augmented staff at Kinetik Healthcare in their Trip Assistant team.",
+      "summary": "Working in their Trip Assistant team as an augmented staff from Datatree Technology",
       "highlights": [
         "Worked with Kinetik Healthcare’s Trip Assistant team.",
         "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
@@ -43,7 +40,7 @@
       "position": "Software Engineer (Golang)",
       "url": "https://www.propertyfinder.ae/",
       "startDate": "2024-10-01",
-      "summary": "Worked in their core b2b engineering team as an augmented resource",
+      "summary": "Worked in their core b2b engineering team as an augmented resource from All Generation Tech",
       "highlights": [
         "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
         "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
