@@ -79,7 +79,7 @@ def json_to_latex(data):
     projects = data.get("projects", [])
     if projects:
         latex.append(r"\section*{Projects}")
-        for proj in projects:
+        for idx, proj in enumerate(projects):
             proj_name = proj.get("name", "")
             proj_url = proj.get("url", "")
             project_demo = proj.get("demo","")
@@ -101,8 +101,13 @@ def json_to_latex(data):
 
             # Project stack if available
             if proj_stack:
-                stack_text = ", ".join([r"\small {%s}" % tech for tech in proj_stack])
+                stack_text = ", ".join([r"\small{%s}" % tech for tech in proj_stack])
                 latex.append(r"\small Tech: %s\\" % stack_text)
+            
+
+            if idx != len(projects)-1:
+                latex.append(r"\\")
+
 
         latex.append(r"\vspace{2pt}")
 
@@ -168,6 +173,10 @@ def json_to_latex(data):
             issuer = cert.get("issuer", "")
             summary = cert.get("summary", "")
             url = cert.get("url", "")
+            show = cert.get("show","")
+
+            if show == False:
+                continue
 
             latex.append(r"\textbf{%s}\\" % name)
             if issuer:

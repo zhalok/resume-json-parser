@@ -239,6 +239,7 @@
     },
     {
       "name": "Computer Vision",
+      "show":false,
       "date": "",
       "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
       "issuer": "Kaggle",
@@ -271,6 +272,19 @@
       "releaseDate": "",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
       "summary": "Developed a violence-inciting text classification system for YouTube comments using domain-adapted Masked Language Models. Applied Transfer Learning, Stacking, and Ensemble techniques, achieving up to 72% macro F1 with a fine-tuned BanglaBERT model, ranking 18th in the shared task.",
+      "fullReleaseDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "website": "https://aclanthology.org/2023.banglalp-1.25/"
+    },
+    {
+      "name": "Multithreaded Blocking I/O vs Single-threaded non-blocking I/O vs Single-threaded non-blocking Event-driven I/O",
+      "publisher": "Medium",
+      "releaseDate": "",
+      "url": "https://python.plainenglish.io/why-single-thread-over-multithread-cb3eae04ab4f",
+      "summary": "An intuitive journey from typical multithreaded blocking I/O to modern single-threaded non-blocking event-driven I/O architecture",
       "fullReleaseDate": {
         "year": null,
         "month": null,
@@ -365,6 +379,7 @@
     {
       "name": "Data Stores Python",
       "description": "A simple TCP based datastore implementation in python, using single-thread, multi-thread and single-threaded-epoll",
+      "stack": ["Python","Socket","System Calls"],
       "highlights": [],
       "keywords": [],
       "startDate": "2025-06-24",
