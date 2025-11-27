@@ -7,19 +7,32 @@
 \geometry{margin=0.8in}
 \pagenumbering{gobble}
 \titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
 \setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.5em}
 \begin{document}
 
 \begin{center}
 \Large \textbf{Zhalok Rahman}\\[3pt]
-\normalsize Software Engineer (Golang) at All Generation Tech\\[2pt]
-\small rahmanzhalok@gmail.com \\quad 01716922067\\[2pt]
-\small https://www.linkedin.com/in/zhalok-rahman/\\[4pt]
+\normalsize Software Engineer 2 at Datatree Technology\\[2pt]
+\small rahmanzhalok@gmail.com \\phone 01716922067\\[2pt]
+\small LinkedIn: https://www.linkedin.com/in/zhalok-rahman/\\[2pt]
+\small Video Introduction: https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1\\[2pt]
 \end{center}
 \section*{Experience}
-\textbf{PropertyFinder} \hfill \textit{Software Engineer (Golang)}\\
-\textit{2024-10-01 -- Present}
+\textbf{Kinetik Healthcare} \hfill \textit{Software Engineer 2}\\
+\textit{2025-04-01 -- Present}
 \begin{itemize}
+\item Worked with Kinetik Healthcare’s Trip Assistant team as a contractor from Datatree Technology.
+\item Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.
+\item Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.
+\item Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.
+\item Migrated trip dashboard to AG Grid for smoother and cleaner implementation.
+\item Conducted load testing on APIs and monitored resource usage under stress from CloudWatch.
+\end{itemize}
+\textbf{PropertyFinder} \hfill \textit{Software Engineer}\\
+\textit{2024-10-01 -- 2025-10-31}
+\begin{itemize}
+\item Worked in their listing b2b engineering backend as contractor from All Generation Tech
 \item Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch
 \item Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load
 \item Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams
@@ -32,7 +45,8 @@
 \textit{2023-10-01 -- 2025-02-01}
 \begin{itemize}
 \item Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.
-\item Built AI generation pipeline with Langchain and used websocket for realtime AI generation streaming
+\item Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming
+\item Offloaded time consuming operations like image generation asynchronously with RabbitMQ
 \item Implemented usage based rate limiting and locked the user for a certain period with redis TTL 
 \item Prepared a home server as a staging server with NGINX, Ngrok and docker for UAT
 \item Participated in business decisions from technical point of view with business stakeholders
@@ -50,19 +64,65 @@
 \item Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)
 \item Built client side application with Next JS, used Redux for efficient data fetching and dataflow
 \item Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions
+\item Built server with FastAPI for inferencing fine-tuned object detection model in onnx format
 \end{itemize}
-\textbf{CodexPro} \hfill \textit{Scratch and Python Instructor }\\
-\textit{2021-09-01 -- 2022-10-01}
-\begin{itemize}
-\item Conducted mentorship on Python and Scratch
-\item Collaborated with marketing team on different offline and onsite campaigns
-\item Prepared educational contents for programming
-\item Collaborated with the technical team
-\end{itemize}
+\vspace{2pt}
 \section*{Skills}
 React , Node JS (Nest JS, Express JS), Next JS, Microservices, PostreSQL, Python (Fastapi, asyncio), Docker, MongoDB, NLP, LLM, Computer Vision, Pytorch
+\vspace{2pt}
+\section*{Projects}
+\textbf{Data Stores Python}\\
+\textit{A simple TCP based datastore implementation in python, using single-thread, multi-thread and single-threaded-epoll}\\
+\small Repo: https://github.com/zhalok/data-stores-python\\
+\textbf{Remote Browser Control}\\
+\textit{A remote browser control automation application made with playwright and python. }\\
+\small Repo: https://github.com/zhalok/remote-browser-control\\
+\small Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73?sid=e7bb2668-1421-4e39-980b-0257d8fb66ff\\
+\small Tech: \small {Playwright}, \small {Python}, \small {FastAPI}, \small {WebSocket}\\
+\textbf{Go Http From Scratch System Calls}\\
+\textit{A simple go server from complete scratch}\\
+\small Repo: https://github.com/zhalok/go-http-from-scratch-system-calls\\
+\small Tech: \small {Golang}, \small {Syscalls}, \small {OSSignals}, \small {Sockets}\\
+\textbf{AI Product Search}\\
+\textit{A system for searching products based on their description and keywords with embeddings and vector search}\\
+\small Repo: https://github.com/zhalok/ai-product-search\\
+\small Tech: \small {FastAPI}, \small {VectorDB (Qdrant)}, \small {RabbitMQ}, \small {SBERT}\\
+\textbf{Ecommerce GraphQL Backend}\\
+\textit{A simple backend for buying and selling product build with graphql, nest js, prisma and postgresql}\\
+\small Repo: https://github.com/zhalok/ecommerce-graphql-backend\\
+\small Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf\\
+\small Tech: \small {Nest JS}, \small {GraphQL}, \small {Prisma}, \small {Postgresql}\\
+\vspace{2pt}
+\section*{Publications}
+\textbf{Optical Mark Recognizer using Object Detection and Clustering}\\
+\small IEEE\\
+\small https://ieeexplore.ieee.org/document/10534561\\
+\small Demo: https://youtu.be/BiEybE5qQqw?si=prtzmefEqwJgmuIR\\
+\textbf{Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques}\\
+\small Association for Computational Linguistics\\
+\small https://aclanthology.org/2023.banglalp-1.25/\\
+\vspace{2pt}
+\section*{Certifications}
+\textbf{Fundamentals of Operating Systems}\\
+\small Udemy\\
+\small https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/\\
+\textit{Learned about Process structure, Memory managment, CPU cycles, I/O management}\\
+\textbf{NodeJS Internals and Architecture}\\
+\small Udemy\\
+\small https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/\\
+\textit{Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications}\\
+\textbf{Supervised Machine Learning: Regression and Classification}\\
+\small Coursera\\
+\small https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY\\
+\textit{Learned about foundational fundamental of regression and classification machine learning algorithms}\\
+\textbf{Computer Vision}\\
+\small Kaggle\\
+\small https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision\\
+\textit{Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc}\\
+\vspace{2pt}
 \section*{Education}
 \textbf{Shahjalal University of Science and Technology}\\
-Bachelors of Science in Computer Science\
+Bachelors of Science in Computer Science\\
 \textit{2019-01-01 -- 2024-04-01}\\
+\vspace{2pt}
 \end{document}

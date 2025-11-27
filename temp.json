@@ -1,19 +1,11 @@
 {
   "basics": {
     "name": "Zhalok Rahman",
-    "label": "Software Engineer 2 at Datatree Technology",
+    "label": "Software Engineer 2 at All Generation Tech",
     "image": "https://avatars.githubusercontent.com/u/52986893?v=4",
-    "email": "rahmanzhalok@gmail.com",
-    "phone": "01716922067",
-    "summary": "I am a software engineer with 3+ years of experience. My area of expertise is backend engineering. I have proficiency in Golang, JavaScript, Python.",
-    "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
-    "profiles": [
-      {
-        "network": "linkedin",
-        "url": "https://www.linkedin.com/in/zhalok-rahman/"
-      }
-    ],
-    "yearsOfExperience": 3001,
+    "summary": "Assalamu walaikum, I am a software engineer with approximately 4 years of experience. My area of expertise is backend engineering. I have proficiency in Golang, JavaScript, Python.",
+    "profiles": [],
+    "yearsOfExperience": 4001,
     "username": "zhalok",
     "id": "82b77cdc-a60b-42d2-b3bd-3a3cb58f05b2",
     "followers": 55,
@@ -28,7 +20,7 @@
       "startDate": "2025-04-01",
       "summary": "Working in their Trip Assistant team as an augmented staff from Datatree Technology",
       "highlights": [
-        "Worked with Kinetik Healthcare’s Trip Assistant team as a contractor from Datatree Technology.",
+        "Worked with Kinetik Healthcare’s Trip Assistant team.",
         "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
         "Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.",
         "Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.",
@@ -44,13 +36,11 @@
     },
     {
       "name": "PropertyFinder",
-      "position": "Software Engineer",
+      "position": "Software Engineer (Golang)",
       "url": "https://www.propertyfinder.ae/",
       "startDate": "2024-10-01",
-      "endDate": "2025-10-31",
       "summary": "Worked in their core b2b engineering team as an augmented resource from All Generation Tech",
       "highlights": [
-        "Worked in their listing b2b engineering backend as contractor from All Generation Tech",
         "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
         "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
         "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
@@ -60,9 +50,9 @@
         "Written go scripts for resolving incident and migration of data"
       ],
       "location": "Dubai, UAE",
-      "isCurrentRole": false,
+      "isCurrentRole": true,
       "start": { "year": 2024, "month": 10 },
-      "end": { "year": 2025, "month": 10 },
+      "end": {},
       "company": "PropertyFinder",
       "website": "https://www.propertyfinder.ae/"
     },
@@ -75,8 +65,7 @@
       "summary": "Worked as a standalone backend engineer who participated in both technical and non technical decisions and experimentations",
       "highlights": [
         "Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.",
-        "Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming",
-        "Offloaded time consuming operations like image generation asynchronously with RabbitMQ",
+        "Built AI generation pipeline with Langchain and used websocket for realtime AI generation streaming",
         "Implemented usage based rate limiting and locked the user for a certain period with redis TTL ",
         "Prepared a home server as a staging server with NGINX, Ngrok and docker for UAT",
         "Participated in business decisions from technical point of view with business stakeholders",
@@ -105,8 +94,7 @@
         "Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)",
         "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
         "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
-        "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
-        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format"
+        "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions"
       ],
       "location": "Sylhet, bangladesh",
       "isCurrentRole": false,
@@ -116,7 +104,6 @@
       "website": "https://www.innovexit.net/"
     },
     {
-      "show": false,
       "name": "CodexPro",
       "position": "Scratch and Python Instructor ",
       "url": "https://codexpro.eu/",
@@ -166,9 +153,8 @@
     {
       "title": "Champion",
       "date": "",
-      "position": "Team Lead",
       "awarder": "HackNSU Season 4, North South University",
-      "summary": "Built an advanced ticketing system concept for efficient train travelling",
+      "summary": "",
       "fullDate": {
         "year": null,
         "month": null
@@ -177,9 +163,8 @@
     {
       "title": "4th position out of 300 teams",
       "date": "",
-      "position": "Team Lead",
       "awarder": "Orbitax SUST SWE Technovent Hackathon",
-      "summary": "Built a smart education management solution with realtime collaborative and interactive lab platform with ThreeJS",
+      "summary": "",
       "fullDate": {
         "year": null,
         "month": null
@@ -188,9 +173,8 @@
     {
       "title": "18th position (globally)",
       "date": "",
-      "position": "Researcher",
       "awarder": "Violence Inciting Text Detection Task by BLP Workshop @ EMNLP 2023",
-      "summary": "Finetuned BERT archiecture language model with domain adaptation for bengali violence text detection",
+      "summary": "",
       "fullDate": {
         "year": null,
         "month": null
@@ -203,7 +187,7 @@
       "date": "",
       "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
       "issuer": "Udemy",
-      "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management",
+      "summary": "Learned process lifecycle, memory segment, CPU cycles etc",
       "fullDate": {
         "year": null,
         "month": null,
@@ -236,18 +220,6 @@
         "day": null
       },
       "website": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY"
-    },
-    {
-      "name": "Computer Vision",
-      "date": "",
-      "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
-      "issuer": "Kaggle",
-      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc",
-      "fullDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
     }
   ],
   "publications": [
@@ -262,21 +234,20 @@
         "month": null,
         "day": null
       },
-      "website": "https://ieeexplore.ieee.org/document/10534561",
-      "demo": "https://youtu.be/BiEybE5qQqw?si=prtzmefEqwJgmuIR"
+      "website": "https://ieeexplore.ieee.org/document/10534561"
     },
     {
-      "name": "Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques",
-      "publisher": "Association for Computational Linguistics",
+      "name": "SUST_Black Box at BLP-2023 Task 1: Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques",
+      "publisher": "IEEE",
       "releaseDate": "",
-      "url": "https://aclanthology.org/2023.banglalp-1.25/",
+      "url": "https://ieeexplore.ieee.org/document/10534561",
       "summary": "Developed a violence-inciting text classification system for YouTube comments using domain-adapted Masked Language Models. Applied Transfer Learning, Stacking, and Ensemble techniques, achieving up to 72% macro F1 with a fine-tuned BanglaBERT model, ranking 18th in the shared task.",
       "fullReleaseDate": {
         "year": null,
         "month": null,
         "day": null
       },
-      "website": "https://aclanthology.org/2023.banglalp-1.25/"
+      "website": "https://ieeexplore.ieee.org/document/10534561"
     }
   ],
   "skills": [
@@ -364,20 +335,24 @@
   "projects": [
     {
       "name": "Data Stores Python",
-      "description": "A simple TCP based datastore implementation in python, using single-thread, multi-thread and single-threaded-epoll",
+      "description": "A simple TCP based datastore implementation in python, using single threading, multithreading and clustered single threading",
       "highlights": [],
       "keywords": [],
       "startDate": "2025-06-24",
       "endDate": "2025-08-08",
       "url": "https://github.com/zhalok/data-stores-python",
-      "roles": ["Developer"],
+      "roles": [
+        "Developer"
+      ],
       "entity": "Personal",
       "type": "application",
       "displayName": "Data Stores Python",
       "website": "",
       "summary": "A simple TCP based datastore implementation in python, using single threading, multithreading and clustered single threading",
       "primaryLanguage": "Python",
-      "languages": ["Python"],
+      "languages": [
+        "Python"
+      ],
       "libraries": [],
       "githubUrl": "https://github.com/zhalok/data-stores-python",
       "repositoryUrl": "https://github.com/zhalok/data-stores-python",
@@ -391,27 +366,37 @@
         "month": 8,
         "day": 8
       },
-      "images": {},
-      "videos": {}
+      "images": {
+
+      },
+      "videos": {
+
+      }
     },
     {
       "name": "Remote Browser Control",
-      "description": "A remote browser control automation application made with playwright and python. ",
+      "description": "",
       "highlights": [],
       "keywords": [],
       "startDate": "2025-02-01",
       "endDate": "2025-02-04",
       "url": "https://github.com/zhalok/remote-browser-control",
-      "demo": "https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73?sid=e7bb2668-1421-4e39-980b-0257d8fb66ff",
-      "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
-      "roles": ["Developer"],
+      "roles": [
+        "Developer"
+      ],
       "entity": "Personal",
       "type": "website",
       "displayName": "Remote Browser Control",
       "website": "",
       "summary": "",
       "primaryLanguage": "Python",
-      "languages": ["Python", "TypeScript", "CSS", "JavaScript", "HTML"],
+      "languages": [
+        "Python",
+        "TypeScript",
+        "CSS",
+        "JavaScript",
+        "HTML"
+      ],
       "libraries": [],
       "githubUrl": "https://github.com/zhalok/remote-browser-control",
       "repositoryUrl": "https://github.com/zhalok/remote-browser-control",
@@ -425,8 +410,12 @@
         "month": 2,
         "day": 4
       },
-      "images": {},
-      "videos": {}
+      "images": {
+
+      },
+      "videos": {
+
+      }
     },
     {
       "name": "Go Http From Scratch System Calls",
@@ -436,15 +425,18 @@
       "startDate": "2025-10-18",
       "endDate": "2025-10-24",
       "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "roles": ["Developer"],
+      "roles": [
+        "Developer"
+      ],
       "entity": "Personal",
       "type": "application",
       "displayName": "Go Http From Scratch System Calls",
       "website": "",
-      "summary": "A simple go server from complete scratch with sockets, os signals and system calls",
+      "summary": "A simple go server from complete scratch",
       "primaryLanguage": "Go",
-      "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "languages": ["Go"],
+      "languages": [
+        "Go"
+      ],
       "libraries": [],
       "githubUrl": "https://github.com/zhalok/go-http-from-scratch-system-calls",
       "repositoryUrl": "https://github.com/zhalok/go-http-from-scratch-system-calls",
@@ -458,67 +450,12 @@
         "month": 10,
         "day": 24
       },
-      "images": {},
-      "videos": {}
-    },
-    {
-      "name": "AI Product Search",
-      "description": "A system for searching products based on their description and keywords with embeddings and vector search",
-      "highlights": [],
-      "keywords": [],
-      "startDate": "2025-10-18",
-      "endDate": "2025-10-24",
-      "url": "https://github.com/zhalok/ai-product-search",
-      "roles": ["Developer", "Lead"],
-      "entity": "Personal",
-      "type": "application",
-      "website": "",
-      "summary": "A system for searching products based on their description and keywords with embeddings and vector search",
-      "primaryLanguage": "Python",
-      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "languages": ["Python"],
-      "libraries": [],
-      "start": {
-        "year": 2025,
-        "month": 10,
-        "day": 18
+      "images": {
+
       },
-      "end": {
-        "year": 2025,
-        "month": 10,
-        "day": 24
-      },
-      "images": {},
-      "videos": {}
-    },
-    {
-      "name": "Ecommerce GraphQL Backend",
-      "description": "A simple backend for buying and selling product build with graphql, nest js, prisma and postgresql",
-      "highlights": [],
-      "keywords": [],
-      "startDate": "2025-10-18",
-      "endDate": "2025-10-24",
-      "url": "https://github.com/zhalok/ecommerce-graphql-backend",
-      "demo":"https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf",
-      "entity": "Personal",
-      "type": "application",
-      "website": "",
-      "primaryLanguage": "Python",
-      "stack": ["Nest JS","GraphQL","Prisma","Postgresql"],
-      "languages": ["TypeScript"],
-      "libraries": [],
-      "start": {
-        "year": 2025,
-        "month": 10,
-        "day": 18
-      },
-      "end": {
-        "year": 2025,
-        "month": 10,
-        "day": 24
-      },
-      "images": {},
-      "videos": {}
+      "videos": {
+
+      }
     }
   ],
   "meta": {
