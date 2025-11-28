@@ -85,19 +85,25 @@ def json_to_latex(data):
             project_demo = proj.get("demo","")
             proj_desc = proj.get("description", "")
             proj_stack = proj.get("stack","")
+            proj_contributions = proj.get("contributions","")
 
             # Project name
             latex.append(r"\textbf{%s}\\" % proj_name)
 
-            if proj_desc:
-                latex.append(r"\textit{%s}\\" % proj_desc)
+            # if proj_desc:
+            #     latex.append(r"\textit{%s}\\" % proj_desc)
 
             # Project URL if available
             if proj_url:
-                latex.append(r"\small Repo: %s\\" % proj_url)
+                latex.append(r"\textit{%s}" % proj_url)
 
-            if project_demo:
-                latex.append(r"\small Demo: %s\\" % project_demo)
+            if proj_contributions:
+                    latex.append(r"\begin{itemize}")
+                    for contribution in proj_contributions:
+                        latex.append(r"\item %s" % contribution)
+                    latex.append(r"\end{itemize}")
+
+ 
 
             # Project stack if available
             if proj_stack:
@@ -105,8 +111,8 @@ def json_to_latex(data):
                 latex.append(r"\small Tech: %s\\" % stack_text)
             
 
-            if idx != len(projects)-1:
-                latex.append(r"\\")
+            # if idx != len(projects)-1:
+            #     latex.append(r"\\")
 
 
         latex.append(r"\vspace{2pt}")
@@ -138,31 +144,31 @@ def json_to_latex(data):
     #         # Add spacing between awards section
     #     latex.append(r"\vspace{2pt}")
 
-    publications = data.get("publications", [])
-    if publications:
-        latex.append(r"\section*{Publications}")
-        for publication in publications:
-            name = publication.get("name", "")
-            url = publication.get("url", "")
-            summary = publication.get("summary", "")
-            publisher = publication.get("publisher", "")
-            demo = publication.get("demo", "")
+    # publications = data.get("publications", [])
+    # if publications:
+    #     latex.append(r"\section*{Publications}")
+    #     for publication in publications:
+    #         name = publication.get("name", "")
+    #         url = publication.get("url", "")
+    #         summary = publication.get("summary", "")
+    #         publisher = publication.get("publisher", "")
+    #         demo = publication.get("demo", "")
 
-            # Publication name
-            latex.append(r"\textbf{%s}\\" % name)
-            if publisher:
-                latex.append(r"\small %s\\" % publisher)
-            if url:
-                latex.append(r"\small %s\\" % url)
+    #         # Publication name
+    #         latex.append(r"\textit{%s}\\" % name)
+    #         if publisher:
+    #             latex.append(r"\small %s\\" % publisher)
+    #         if url:
+    #             latex.append(r"\small %s\\" % url)
 
-            if demo:
-                latex.append(r"\small Demo: %s\\" % demo)
-            # latex.append(r"\small %s\\" % summary)
+    #         if demo:
+    #             latex.append(r"\small Demo: %s\\" % demo)
+    #         # latex.append(r"\small %s\\" % summary)
 
-            # Add spacing after each publication
-            # latex.append(r"\vspace{3pt}")
+    #         # Add spacing after each publication
+    #         # latex.append(r"\vspace{3pt}")
 
-        latex.append(r"\vspace{2pt}")
+    #     latex.append(r"\vspace{2pt}")
 
     # Certifications
     certifications = data.get("certificates", [])

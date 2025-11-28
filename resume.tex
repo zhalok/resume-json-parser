@@ -72,43 +72,47 @@ React , Node JS (Nest JS, Express JS), Next JS, Microservices, PostreSQL, Python
 \vspace{2pt}
 \section*{Projects}
 \textbf{Data Stores Python}\\
-\textit{A simple TCP based datastore implementation in python, using single-thread, multi-thread and single-threaded-epoll}\\
-\small Repo: https://github.com/zhalok/data-stores-python\\
+\textit{https://github.com/zhalok/data-stores-python}
+\begin{itemize}
+\item Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o
+\item Conducted stress testing with high load concurrency simulation with goroutines
+\item Observed resource usages of containers via CAdvisor
+\end{itemize}
 \small Tech: \small{Python}, \small{Socket}, \small{System Calls}\\
-\\
 \textbf{Remote Browser Control}\\
-\textit{A remote browser control automation application made with playwright and python. }\\
-\small Repo: https://github.com/zhalok/remote-browser-control\\
-\small Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73?sid=e7bb2668-1421-4e39-980b-0257d8fb66ff\\
+\textit{https://github.com/zhalok/remote-browser-control}
+\begin{itemize}
+\item Created and controlled browser session with playwright
+\item Built FastAPI app for recieving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser
+\item Created a front end app with react to render the remote browser session and also send commands via websocket
+\item Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73
+\end{itemize}
 \small Tech: \small{Playwright}, \small{Python}, \small{FastAPI}, \small{WebSocket}\\
-\\
 \textbf{Go Http From Scratch System Calls}\\
-\textit{A simple go server from complete scratch}\\
-\small Repo: https://github.com/zhalok/go-http-from-scratch-system-calls\\
+\textit{https://github.com/zhalok/go-http-from-scratch-system-calls}
+\begin{itemize}
+\item Built http protocol from sockets and systemcalls
+\item Prsed HTTP request headers and payload
+\item Handled graceful connection closing
+\end{itemize}
 \small Tech: \small{Golang}, \small{Syscalls}, \small{OSSignals}, \small{Sockets}\\
-\\
 \textbf{AI Product Search}\\
-\textit{A system for searching products based on their description and keywords with embeddings and vector search}\\
-\small Repo: https://github.com/zhalok/ai-product-search\\
+\textit{https://github.com/zhalok/ai-product-search}
+\begin{itemize}
+\item Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant
+\item Built inferencing and searching pipeline with FastAPI
+\item Used finetuned self hosted SBERT model for generating embedding
+\end{itemize}
 \small Tech: \small{FastAPI}, \small{VectorDB (Qdrant)}, \small{RabbitMQ}, \small{SBERT}\\
-\\
 \textbf{Ecommerce GraphQL Backend}\\
-\textit{A simple backend for buying and selling product build with graphql, nest js, prisma and postgresql}\\
-\small Repo: https://github.com/zhalok/ecommerce-graphql-backend\\
-\small Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf\\
+\textit{https://github.com/zhalok/ecommerce-graphql-backend}
+\begin{itemize}
+\item Built product crud operations with role based access control using NestJS and TypeScript
+\item Used GraphQL for serving endpoints
+\item Used Prisma for database operations
+\item Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf
+\end{itemize}
 \small Tech: \small{Nest JS}, \small{GraphQL}, \small{Prisma}, \small{Postgresql}\\
-\vspace{2pt}
-\section*{Publications}
-\textbf{Optical Mark Recognizer using Object Detection and Clustering}\\
-\small IEEE\\
-\small https://ieeexplore.ieee.org/document/10534561\\
-\small Demo: https://youtu.be/BiEybE5qQqw?si=prtzmefEqwJgmuIR\\
-\textbf{Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques}\\
-\small Association for Computational Linguistics\\
-\small https://aclanthology.org/2023.banglalp-1.25/\\
-\textbf{Multithreaded Blocking I/O vs Single-threaded non-blocking I/O vs Single-threaded non-blocking Event-driven I/O}\\
-\small Medium\\
-\small https://python.plainenglish.io/why-single-thread-over-multithread-cb3eae04ab4f\\
 \vspace{2pt}
 \section*{Certifications}
 \textbf{Fundamentals of Operating Systems}\\
