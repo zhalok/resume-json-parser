@@ -169,7 +169,9 @@
       "contributions": [
         "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
         "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via CAdvisor"
+        "Observed resource usages of containers via CAdvisor",
+        "Scrapped metrics from cAdvisor using prometheus and showed them in Grafana",
+        "Demo: https://www.loom.com/share/35d3386fd0174b98b721c1033cf002f8"
       ]
     },
     {
