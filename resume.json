@@ -1,54 +1,37 @@
 {
+  "fields_to_show": ["work", "skills", "projects", "certificates", "education"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
-    "image": "https://avatars.githubusercontent.com/u/52986893?v=4",
     "email": "rahmanzhalok@gmail.com",
     "phone": "01716922067",
-    "summary": "I am a software engineer with 3+ years of experience. My area of expertise is backend engineering. I have proficiency in Golang, JavaScript, Python.",
     "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
     "profiles": [
       {
         "network": "linkedin",
         "url": "https://www.linkedin.com/in/zhalok-rahman/"
       }
-    ],
-    "yearsOfExperience": 3001,
-    "username": "zhalok",
-    "id": "82b77cdc-a60b-42d2-b3bd-3a3cb58f05b2",
-    "followers": 55,
-    "following": 40,
-    "picture": "https://avatars.githubusercontent.com/u/52986893?v=4"
+    ]
   },
   "work": [
     {
       "name": "Kinetik Healthcare",
       "position": "Software Engineer 2",
-      "url": "https://datatree.com/",
       "startDate": "2025-04-01",
-      "summary": "Working in their Trip Assistant team as an augmented staff from Datatree Technology",
       "highlights": [
-        "Worked with Kinetik Healthcare’s Trip Assistant team as a contractor from Datatree Technology.",
+        "Worked with Kinetik Healthcare's Trip Assistant team as a contractor from Datatree Technology.",
         "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
         "Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.",
         "Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.",
         "Migrated trip dashboard to AG Grid for smoother and cleaner implementation.",
         "Conducted load testing on APIs and monitored resource usage under stress from CloudWatch."
-      ],
-      "location": "Dhaka, Bangladesh",
-      "isCurrentRole": true,
-      "start": { "year": 2025, "month": 4 },
-      "end": {},
-      "company": "DataTree Technology",
-      "website": "https://datatree.com/"
+      ]
     },
     {
       "name": "PropertyFinder",
       "position": "Software Engineer",
-      "url": "https://www.propertyfinder.ae/",
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
-      "summary": "Worked in their core b2b engineering team as an augmented resource from All Generation Tech",
       "highlights": [
         "Worked in their listing b2b engineering backend as contractor from All Generation Tech",
         "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
@@ -58,21 +41,13 @@
         "Collaborated with data engineering team for fixing data migration issues",
         "Deployed application with serverless framework and github actions",
         "Written go scripts for resolving incident and migration of data"
-      ],
-      "location": "Dubai, UAE",
-      "isCurrentRole": false,
-      "start": { "year": 2024, "month": 10 },
-      "end": { "year": 2025, "month": 10 },
-      "company": "PropertyFinder",
-      "website": "https://www.propertyfinder.ae/"
+      ]
     },
     {
       "name": "Learnyx AI",
       "position": "Fullstack Engineer",
-      "url": "https://www.learnyx.com/",
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
-      "summary": "Worked as a standalone backend engineer who participated in both technical and non technical decisions and experimentations",
       "highlights": [
         "Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.",
         "Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming",
@@ -86,466 +61,158 @@
         "Built search efficient functionality with elasticsearch",
         "Implemented payment feature with stripe, synced stripe data across the system with webhook",
         "Deployed and managed application infrastructure with containerization into self hosted environment with coolify"
-      ],
-      "location": "Delaware, United States",
-      "isCurrentRole": false,
-      "start": { "year": 2023, "month": 10 },
-      "end": { "year": 2025, "month": 2 },
-      "company": "Learnyx AI",
-      "website": "https://www.learnyx.com/"
+      ]
     },
     {
       "name": "Innovext IT",
       "position": "Fullstack Developer",
-      "url": "https://www.innovexit.net/",
       "startDate": "2022-12-01",
       "endDate": "2023-10-01",
-      "summary": "",
       "highlights": [
         "Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)",
         "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
         "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
         "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
         "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format"
-      ],
-      "location": "Sylhet, bangladesh",
-      "isCurrentRole": false,
-      "start": { "year": 2022, "month": 12 },
-      "end": { "year": 2023, "month": 10 },
-      "company": "Innovext IT",
-      "website": "https://www.innovexit.net/"
+      ]
     },
     {
       "show": false,
       "name": "CodexPro",
       "position": "Scratch and Python Instructor ",
-      "url": "https://codexpro.eu/",
       "startDate": "2021-09-01",
       "endDate": "2022-10-01",
-      "summary": "",
       "highlights": [
         "Conducted mentorship on Python and Scratch",
         "Collaborated with marketing team on different offline and onsite campaigns",
         "Prepared educational contents for programming",
         "Collaborated with the technical team"
-      ],
-      "location": "Berlin,Germany ",
-      "isCurrentRole": false,
-      "start": { "year": 2021, "month": 9 },
-      "end": { "year": 2022, "month": 10 },
-      "company": "CodexPro",
-      "website": "https://codexpro.eu/"
+      ]
     }
   ],
-  "volunteer": [],
   "education": [
     {
       "institution": "Shahjalal University of Science and Technology",
-      "url": "https://www.sust.edu/",
       "area": "Computer Science",
       "studyType": "Bachelors of Science",
       "startDate": "2019-01-01",
-      "endDate": "2024-04-01",
-      "score": "",
-      "courses": [],
-      "description": "",
-      "activities": "",
-      "start": {
-        "year": 2019,
-        "month": 1
-      },
-      "end": {
-        "year": 2024,
-        "month": 4
-      },
-      "website": "https://www.sust.edu/",
-      "gpa": ""
-    }
-  ],
-  "awards": [
-    {
-      "title": "Champion",
-      "date": "",
-      "position": "Team Lead",
-      "awarder": "HackNSU Season 4, North South University",
-      "summary": "Built an advanced ticketing system concept for efficient train travelling",
-      "fullDate": {
-        "year": null,
-        "month": null
-      }
-    },
-    {
-      "title": "4th position out of 300 teams",
-      "date": "",
-      "position": "Team Lead",
-      "awarder": "Orbitax SUST SWE Technovent Hackathon",
-      "summary": "Built a smart education management solution with realtime collaborative and interactive lab platform with ThreeJS",
-      "fullDate": {
-        "year": null,
-        "month": null
-      }
-    },
-    {
-      "title": "18th position (globally)",
-      "date": "",
-      "position": "Researcher",
-      "awarder": "Violence Inciting Text Detection Task by BLP Workshop @ EMNLP 2023",
-      "summary": "Finetuned BERT archiecture language model with domain adaptation for bengali violence text detection",
-      "fullDate": {
-        "year": null,
-        "month": null
-      }
+      "endDate": "2024-04-01"
     }
   ],
   "certificates": [
     {
       "name": "Fundamentals of Operating Systems",
-      "date": "",
       "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
       "issuer": "Udemy",
-      "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management",
-      "fullDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/"
+      "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
     },
     {
       "name": "NodeJS Internals and Architecture",
-      "date": "",
       "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
       "issuer": "Udemy",
-      "summary": "Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications",
-      "fullDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/"
+      "summary": "Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications"
     },
     {
       "name": "Supervised Machine Learning: Regression and Classification",
-      "date": "",
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
-      "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms",
-      "fullDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY"
+      "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
     },
     {
       "name": "Computer Vision",
-      "show":false,
-      "date": "",
+      "show": false,
       "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
       "issuer": "Kaggle",
-      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc",
-      "fullDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    }
-  ],
-  "publications": [
-    {
-      "name": "Optical Mark Recognizer using Object Detection and Clustering",
-      "publisher": "IEEE",
-      "releaseDate": "",
-      "url": "https://ieeexplore.ieee.org/document/10534561",
-      "summary": "Developed an automated OMR sheet analysis system using YOLOv8n and DBSCAN clustering to detect answers across multiple layouts. Designed to identify empty and multiple responses, achieving 96.5% precision, 99.8% recall, and 97.3% mAP on a custom multi-layout dataset.",
-      "fullReleaseDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://ieeexplore.ieee.org/document/10534561",
-      "demo": "https://youtu.be/BiEybE5qQqw?si=prtzmefEqwJgmuIR"
-    },
-    {
-      "name": "Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques",
-      "publisher": "Association for Computational Linguistics",
-      "releaseDate": "",
-      "url": "https://aclanthology.org/2023.banglalp-1.25/",
-      "summary": "Developed a violence-inciting text classification system for YouTube comments using domain-adapted Masked Language Models. Applied Transfer Learning, Stacking, and Ensemble techniques, achieving up to 72% macro F1 with a fine-tuned BanglaBERT model, ranking 18th in the shared task.",
-      "fullReleaseDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://aclanthology.org/2023.banglalp-1.25/"
-    },
-    {
-      "name": "Multithreaded Blocking I/O vs Single-threaded non-blocking I/O vs Single-threaded non-blocking Event-driven I/O",
-      "publisher": "Medium",
-      "releaseDate": "",
-      "url": "https://python.plainenglish.io/why-single-thread-over-multithread-cb3eae04ab4f",
-      "summary": "An intuitive journey from typical multithreaded blocking I/O to modern single-threaded non-blocking event-driven I/O architecture",
-      "fullReleaseDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "website": "https://aclanthology.org/2023.banglalp-1.25/"
+      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc"
     }
   ],
   "skills": [
     {
-      "name": "React ",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "React JS"
     },
     {
-      "name": "Node JS (Nest JS, Express JS)",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Node JS (Nest JS, Express JS)"
     },
     {
-      "name": "Next JS",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Next JS"
     },
     {
-      "name": "Microservices",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Microservices"
     },
     {
-      "name": "PostreSQL",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "PostreSQL"
     },
     {
-      "name": "Python (Fastapi, asyncio)",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Python (Fastapi, asyncio)"
     },
     {
-      "name": "Docker",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Docker"
     },
     {
-      "name": "MongoDB",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "MongoDB"
     },
     {
-      "name": "NLP, LLM",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "NLP, LLM"
     },
     {
-      "name": "Computer Vision",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Computer Vision"
     },
     {
-      "name": "Pytorch",
-      "level": "Proficient",
-      "keywords": [],
-      "rating": 0,
-      "yearsOfExperience": null
+      "name": "Pytorch"
     }
   ],
-  "languages": [],
-  "interests": [],
-  "references": [],
   "projects": [
     {
       "name": "Data Stores Python",
-      "description": "A simple TCP based datastore implementation in python, using single-thread, multi-thread and single-threaded-epoll",
-      "stack": ["Python","Socket","System Calls"],
-      "contributions":["Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o","Conducted stress testing with high load concurrency simulation with goroutines","Observed resource usages of containers via CAdvisor"],
-      "highlights": [],
-      "keywords": [],
-      "startDate": "2025-06-24",
-      "endDate": "2025-08-08",
       "url": "https://github.com/zhalok/data-stores-python",
-      "roles": ["Developer"],
-      "entity": "Personal",
-      "type": "application",
-      "displayName": "Data Stores Python",
-      "website": "",
-      "summary": "A simple TCP based datastore implementation in python, using single threading, multithreading and clustered single threading",
-      "primaryLanguage": "Python",
-      "languages": ["Python"],
-      "libraries": [],
-      "githubUrl": "https://github.com/zhalok/data-stores-python",
-      "repositoryUrl": "https://github.com/zhalok/data-stores-python",
-      "start": {
-        "year": 2025,
-        "month": 6,
-        "day": 24
-      },
-      "end": {
-        "year": 2025,
-        "month": 8,
-        "day": 8
-      },
-      "images": {},
-      "videos": {}
+      "stack": ["Python", "Socket", "System Calls"],
+      "contributions": [
+        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
+        "Conducted stress testing with high load concurrency simulation with goroutines",
+        "Observed resource usages of containers via CAdvisor"
+      ]
     },
     {
       "name": "Remote Browser Control",
-      "description": "A remote browser control automation application made with playwright and python. ",
-      "highlights": [],
-      "keywords": [],
-      "startDate": "2025-02-01",
-      "endDate": "2025-02-04",
-      "contributions":["Created and controlled browser session with playwright","Built FastAPI app for recieving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser","Created a front end app with react to render the remote browser session and also send commands via websocket","Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"],
       "url": "https://github.com/zhalok/remote-browser-control",
-      "demo": "https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73",
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
-      "roles": ["Developer"],
-      "entity": "Personal",
-      "type": "website",
-      "displayName": "Remote Browser Control",
-      "website": "",
-      "summary": "",
-      "primaryLanguage": "Python",
-      "languages": ["Python", "TypeScript", "CSS", "JavaScript", "HTML"],
-      "libraries": [],
-      "githubUrl": "https://github.com/zhalok/remote-browser-control",
-      "repositoryUrl": "https://github.com/zhalok/remote-browser-control",
-      "start": {
-        "year": 2025,
-        "month": 2,
-        "day": 1
-      },
-      "end": {
-        "year": 2025,
-        "month": 2,
-        "day": 4
-      },
-      "images": {},
-      "videos": {}
+      "contributions": [
+        "Created and controlled browser session with playwright",
+        "Built FastAPI app for recieving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
+        "Created a front end app with react to render the remote browser session and also send commands via websocket",
+        "Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"
+      ]
     },
     {
       "name": "Go Http From Scratch System Calls",
-      "description": "A simple go server from complete scratch",
-      "highlights": [],
-      "keywords": [],
-      "contributions":["Built http protocol from sockets and systemcalls","Prsed HTTP request headers and payload","Handled graceful connection closing"],
-      "startDate": "2025-10-18",
-      "endDate": "2025-10-24",
       "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "roles": ["Developer"],
-      "entity": "Personal",
-      "type": "application",
-      "displayName": "Go Http From Scratch System Calls",
-      "website": "",
-      "summary": "A simple go server from complete scratch with sockets, os signals and system calls",
-      "primaryLanguage": "Go",
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "languages": ["Go"],
-      "libraries": [],
-      "githubUrl": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "repositoryUrl": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "start": {
-        "year": 2025,
-        "month": 10,
-        "day": 18
-      },
-      "end": {
-        "year": 2025,
-        "month": 10,
-        "day": 24
-      },
-      "images": {},
-      "videos": {}
+      "contributions": [
+        "Built http protocol from sockets and systemcalls",
+        "Prsed HTTP request headers and payload",
+        "Handled graceful connection closing"
+      ]
     },
     {
       "name": "AI Product Search",
-      "description": "A system for searching products based on their description and keywords with embeddings and vector search",
-      "highlights": [],
-      "contributions":["Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant","Built inferencing and searching pipeline with FastAPI","Used finetuned self hosted SBERT model for generating embedding"],
-      "keywords": [],
-      "startDate": "2025-10-18",
-      "endDate": "2025-10-24",
       "url": "https://github.com/zhalok/ai-product-search",
-      "roles": ["Developer", "Lead"],
-      "entity": "Personal",
-      "type": "application",
-      "website": "",
-      "summary": "A system for searching products based on their description and keywords with embeddings and vector search",
-      "primaryLanguage": "Python",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "languages": ["Python"],
-      "libraries": [],
-      "start": {
-        "year": 2025,
-        "month": 10,
-        "day": 18
-      },
-      "end": {
-        "year": 2025,
-        "month": 10,
-        "day": 24
-      },
-      "images": {},
-      "videos": {}
+      "contributions": [
+        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
+        "Built inferencing and searching pipeline with FastAPI",
+        "Used finetuned self hosted SBERT model for generating embedding"
+      ]
     },
     {
       "name": "Ecommerce GraphQL Backend",
-      "description": "A simple backend for buying and selling product build with graphql, nest js, prisma and postgresql",
-      "highlights": [],
-      "contributions":["Built product crud operations with role based access control using NestJS and TypeScript","Used GraphQL for serving endpoints","Used Prisma for database operations","Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf"],
-      "keywords": [],
-      "startDate": "2025-10-18",
-      "endDate": "2025-10-24",
       "url": "https://github.com/zhalok/ecommerce-graphql-backend",
-      "demo":"https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf",
-      "entity": "Personal",
-      "type": "application",
-      "website": "",
-      "primaryLanguage": "Python",
-      "stack": ["Nest JS","GraphQL","Prisma","Postgresql"],
-      "languages": ["TypeScript"],
-      "libraries": [],
-      "start": {
-        "year": 2025,
-        "month": 10,
-        "day": 18
-      },
-      "end": {
-        "year": 2025,
-        "month": 10,
-        "day": 24
-      },
-      "images": {},
-      "videos": {}
+      "stack": ["Nest JS", "GraphQL", "Prisma", "Postgresql"],
+      "contributions": [
+        "Built product crud operations with role based access control using NestJS and TypeScript",
+        "Used GraphQL for serving endpoints",
+        "Used Prisma for database operations",
+        "Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf"
+      ]
     }
-  ],
-  "meta": {
-    "canonical": "https://gitconnected.com/api/v1/portfolio/zhalok",
-    "version": "v1.0.0",
-    "lastModified": "2025-11-10T17:15:44.731Z",
-    "theme": "elegant",
-    "note": "This is a combined version of the standard JSON Resume and gitconnected extensions for maximum compatibility."
-  }
+  ]
 }

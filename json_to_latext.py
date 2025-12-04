@@ -1,4 +1,5 @@
 import json
+from util import get_section_renderers
 
 
 def json_to_latex(data):
@@ -48,166 +49,16 @@ def json_to_latex(data):
 
     latex.append(r"\end{center}")
 
-    # Work Experience
-    work = data.get("work", [])
-    if work:
-        latex.append(r"\section*{Experience}")
-        for job in work:
-            if "show" in job and job["show"] == False:
-                continue
-            latex.append(
-                r"\textbf{%s} \hfill \textit{%s}\\"
-                % (job.get("name", ""), job.get("position", ""))
-            )
-            date_range = f"{job.get('startDate','')} -- {job.get('endDate','Present')}"
-            latex.append(r"\textit{%s}" % date_range)
-            latex.append(r"\begin{itemize}")
-            for hl in job.get("highlights", []):
-                latex.append(r"\item %s" % hl)
-            latex.append(r"\end{itemize}")
-        latex.append(r"\vspace{2pt}")
+    # Get the fields to show and their order
+    fields_to_show = data.get("fields_to_show", ["work", "skills", "projects", "certificates", "education"])
 
-    # Skills
-    skills = data.get("skills", [])
-    if skills:
-        latex.append(r"\section*{Skills}")
-        skill_list = [s.get("name", "") for s in skills]
-        latex.append(", ".join(skill_list))
-        latex.append(r"\vspace{2pt}")
+    # Get section renderers from utils
+    section_renderers = get_section_renderers(data, latex)
 
-    # Projects
-    projects = data.get("projects", [])
-    if projects:
-        latex.append(r"\section*{Projects}")
-        for idx, proj in enumerate(projects):
-            proj_name = proj.get("name", "")
-            proj_url = proj.get("url", "")
-            project_demo = proj.get("demo","")
-            proj_desc = proj.get("description", "")
-            proj_stack = proj.get("stack","")
-            proj_contributions = proj.get("contributions","")
-
-            # Project name
-            latex.append(r"\textbf{%s}\\" % proj_name)
-
-            # if proj_desc:
-            #     latex.append(r"\textit{%s}\\" % proj_desc)
-
-            # Project URL if available
-            if proj_url:
-                latex.append(r"\textit{%s}" % proj_url)
-
-            if proj_contributions:
-                    latex.append(r"\begin{itemize}")
-                    for contribution in proj_contributions:
-                        latex.append(r"\item %s" % contribution)
-                    latex.append(r"\end{itemize}")
-
- 
-
-            # Project stack if available
-            if proj_stack:
-                stack_text = ", ".join([r"\small{%s}" % tech for tech in proj_stack])
-                latex.append(r"\small Tech: %s\\" % stack_text)
-            
-
-            # if idx != len(projects)-1:
-            #     latex.append(r"\\")
-
-
-        latex.append(r"\vspace{2pt}")
-
-
-    #     latex.append(r"\section*{Awards}")
-    #     for award in awards:
-    #         title = award.get("title", "")
-    #         awarder = award.get("awarder", "")
-    #         summary = award.get("summary", "")
-    #         position = award.get("position", "")
-
-    #         # Award title
-    #         latex.append(r"\textbf{%s}\\" % title)
-
-    #         # Awarder if available
-    #         if awarder:
-    #             latex.append(r"\small %s\\" % awarder)
-
-    #         if position:
-    #             latex.append(r"\small %s\\" % position)
-
-    #         if summary:
-    #             latex.append(r"\textit{%s}\\" % summary)
-
-    #         # Add spacing after each award
-    #         latex.append(r"\vspace{3pt}")
-
-    #         # Add spacing between awards section
-    #     latex.append(r"\vspace{2pt}")
-
-    # publications = data.get("publications", [])
-    # if publications:
-    #     latex.append(r"\section*{Publications}")
-    #     for publication in publications:
-    #         name = publication.get("name", "")
-    #         url = publication.get("url", "")
-    #         summary = publication.get("summary", "")
-    #         publisher = publication.get("publisher", "")
-    #         demo = publication.get("demo", "")
-
-    #         # Publication name
-    #         latex.append(r"\textit{%s}\\" % name)
-    #         if publisher:
-    #             latex.append(r"\small %s\\" % publisher)
-    #         if url:
-    #             latex.append(r"\small %s\\" % url)
-
-    #         if demo:
-    #             latex.append(r"\small Demo: %s\\" % demo)
-    #         # latex.append(r"\small %s\\" % summary)
-
-    #         # Add spacing after each publication
-    #         # latex.append(r"\vspace{3pt}")
-
-    #     latex.append(r"\vspace{2pt}")
-
-    # Certifications
-    certifications = data.get("certificates", [])
-    if certifications:
-        latex.append(r"\section*{Certifications}")
-        for cert in certifications:
-            name = cert.get("name", "")
-            issuer = cert.get("issuer", "")
-            summary = cert.get("summary", "")
-            url = cert.get("url", "")
-            show = cert.get("show","")
-
-            if show == False:
-                continue
-
-            latex.append(r"\textbf{%s}\\" % name)
-            if issuer:
-                latex.append(r"\small %s\\" % issuer)
-            if url:
-                latex.append(r"\small %s\\" % url)
-            if summary:
-                latex.append(r"\textit{%s}\\" % summary)
-
-            # Add spacing after each certification
-            # latex.append(r"\vspace{3pt}")
-
-        latex.append(r"\vspace{2pt}")
-
-    # Education
-    edu = data.get("education", [])
-    if edu:
-        latex.append(r"\section*{Education}")
-        for e in edu:
-            latex.append(r"\textbf{%s}\\" % e.get("institution", ""))
-            latex.append(r"%s in %s\\" % (e.get("studyType", ""), e.get("area", "")))
-            latex.append(
-                r"\textit{%s -- %s}\\" % (e.get("startDate", ""), e.get("endDate", ""))
-            )
-        latex.append(r"\vspace{2pt}")
+    # Render sections in the order specified by fields_to_show
+    for field in fields_to_show:
+        if field in section_renderers:
+            section_renderers[field]()
 
     # End
     latex.append(r"\end{document}")
