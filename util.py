@@ -1,3 +1,9 @@
+import re
+
+def apply_bold_markers(text):
+    """Convert **text** markers to \\textbf{text} in LaTeX."""
+    return re.sub(r'\*\*(.+?)\*\*', r'\\textbf{\1}', text)
+
 def get_section_renderers(data, latex):
     """
     Returns a dictionary mapping section names to their render functions.
@@ -21,11 +27,16 @@ def get_section_renderers(data, latex):
                     r"\textbf{%s} \hfill \textit{%s}\\"
                     % (job.get("name", ""), job.get("position", ""))
                 )
+                # Add location on the next line
+                location = job.get("location", "")
                 date_range = f"{job.get('startDate','')} -- {job.get('endDate','Present')}"
-                latex.append(r"\textit{%s}" % date_range)
+                if location:
+                    latex.append(r"\textit{%s} \hfill \textit{%s}\\" % (location, date_range))
+                else:
+                    latex.append(r"\textit{%s}" % date_range)
                 latex.append(r"\begin{itemize}")
                 for hl in job.get("highlights", []):
-                    latex.append(r"\item %s" % hl)
+                    latex.append(r"\item %s" % apply_bold_markers(hl))
                 latex.append(r"\end{itemize}")
             latex.append(r"\vspace{2pt}")
 
@@ -62,7 +73,7 @@ def get_section_renderers(data, latex):
                 if proj_contributions:
                         latex.append(r"\begin{itemize}")
                         for contribution in proj_contributions:
-                            latex.append(r"\item %s" % contribution)
+                            latex.append(r"\item %s" % apply_bold_markers(contribution))
                         latex.append(r"\end{itemize}")
 
 
